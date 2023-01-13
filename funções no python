@@ -1,1 +1,58 @@
 # python
+"""
+aprender a usar funções
+
+funções são criadas para acabar com repetição de codigos
+
+
+sintaxe  def nome_da_função():
+            pass
+
+"""
+
+# exemplo 1
+
+def dizer_oi():
+    print("olá")
+   
+# exemplo 2   
+
+def detector_de_pesos():
+    global peso
+    global maiorp
+    global nome
+    print("-" * 30)
+    print("detectando peso")
+
+   
+    nome = str(input("digite o nome:"))
+    peso = float(input("digite o peso:"))
+    maiorp = float
+
+
+# exemplo 3
+def soma(a,b):
+     print(a + b)
+     print(a % b)
+     print(a ** b)
+
+# exemplo 4
+def par_ou_impar(n):
+    operaçao = n % 2
+    if (operaçao == 0):
+        print(f' {n} é par')
+    else:
+        print(f' {n} é impar')
+
+# exemplo 5
+def outraSoma(a,b):
+    print(f'valores antes da soma {a} x {b}') # representação da multiplicação antes da soma das variaveis
+    print(f'soma da variavel "a" {a} + 1')
+    a += 1
+    print(f'soma da variavel "b" {b} + 5')
+    b += 5
+    print(f'{a} x {b}')
+    m = a*b
+    print(f'{a} x {b} valor da multiplicação é: {m}' ) # resultado final
+outraSoma(3,7)
+outraSoma(-2,1) #exemplo
